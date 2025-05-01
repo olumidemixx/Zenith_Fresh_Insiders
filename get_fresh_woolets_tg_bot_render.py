@@ -1,5 +1,5 @@
 from single_traders import single_topTraders
-from single_holders import single_topHolders
+
 from wallet_stats_prev import fresh_wallet_stats
 from get_all_tokens_2  import getBondedTokens, getCompletingTokens
 import os
