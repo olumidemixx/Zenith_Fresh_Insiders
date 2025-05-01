@@ -1,6 +1,6 @@
 #thi is to get all the tokens, not combined with wallet stats
 from single_traders import single_topTraders
-from single_holders import single_topHolders
+
 from wallet_stats_prev import fresh_wallet_stats
 
 import time
