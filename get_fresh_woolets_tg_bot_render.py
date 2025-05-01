@@ -52,7 +52,11 @@ async def analyze(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await context.bot.send_document(chat_id=update.effective_chat.id, document=f)
 
     await update.message.reply_text("Analysis complete. Check the file below for details.")
-    
+
+async def home_page(request):
+    """Handler for the home page"""
+    return web.Response(text="Bot is running", status=200)
+
 
 
 from aiohttp import web
@@ -129,7 +133,7 @@ def main():
     web_app.on_shutdown.append(on_shutdown)
     
     # Add home page route
-    #web_app.router.add_get('/', home_page)
+    web_app.router.add_get('/', home_page)
 
     # Get port from environment or use default
     port = int(os.environ.get("PORT", 8443))
