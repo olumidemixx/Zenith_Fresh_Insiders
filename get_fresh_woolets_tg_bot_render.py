@@ -91,7 +91,7 @@ async def on_startup(web_app):
         await application.start()
         
         # Use Render URL from environment variable
-        webhook_url = "https://zenith-fresh-insiders.onrender.com"
+        webhook_url = "https://zenith-fresh-insiders-3lpx.onrender.com"
         if not webhook_url:
             logging.error("RENDER_EXTERNAL_URL environment variable not found")
             await application.shutdown()
