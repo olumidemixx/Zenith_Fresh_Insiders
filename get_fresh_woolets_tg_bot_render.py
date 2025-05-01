@@ -12,7 +12,7 @@ import asyncio
 from typing import List, Set, Dict
 import time
 from concurrent.futures import ThreadPoolExecutor
-from toptradersbysellsAndUnrealizedPSKipFirst100000Orso import topTraders,earlyBuyers,topHolders
+#from toptradersbysellsAndUnrealizedPSKipFirst100000Orso import topTraders,earlyBuyers,topHolders
 
 
 from aiohttp import web
